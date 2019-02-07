@@ -15,15 +15,30 @@ array[1] = 'hello';
 // for practice
 
 // use forEach
+const arrayTest = [9, 3, 4];
+console.log(arrayTest);
+arrayTest.forEach(element => {
+    console.log(element);
+});
 
 // use map
+const newArray = arrayTest.map(i => i + 1);
+console.log(newArray);
 
 // use pop
+newArray.pop();
+console.log(newArray);
 
 // use push
+newArray.push(7);
+console.log(newArray);
 
 // use shift
+newArray.shift(1);
+console.log(newArray);
 
 // use unshift
+newArray.unshift(1);
+console.log(newArray);
 
 // use filter
