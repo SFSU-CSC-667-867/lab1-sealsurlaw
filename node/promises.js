@@ -5,6 +5,10 @@ const promiseExample = () => {
 };
 
 promiseExample()
-  .then((res) => console.log(res));
+  .then((res) => res + ' World')
+  .then((res) => console.log(res))
+  .catch(err => {
+    console.log('Failed: ' + err);
+  })
 
 console.log('hi');
