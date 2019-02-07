@@ -1,7 +1,7 @@
 // there are 3 basic ways to declare variables in js
 
 // Var, but don't use this one anymore
-var test =  3;
+var test = 3;
 
 // let, is like var, but block scoped, and not allowed to re-declare
 let hello = 'world'; // Notice strings use single quotes
@@ -20,7 +20,21 @@ obj.a = 9;
 // For Practice
 
 // declare an object with an object as a property
+const testVar = {
+    y: {
+        a: 'Hello',
+        b: 4,
+        c: 7,
+    },
+};
+
+console.log(testVar);
 
 // delete a property
+delete testVar.y;
+testVar.a = 'p';
+console.log(testVar);
 
 // change a property
+testVar.a = 5;
+console.log(testVar);
